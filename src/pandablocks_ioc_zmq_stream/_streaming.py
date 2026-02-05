@@ -2,7 +2,6 @@ import logging
 import os
 from collections.abc import Iterator
 
-import h5py
 import numpy as np
 import zmq
 from pandablocks.hdf import Pipeline
@@ -55,7 +54,7 @@ class ZMQPublisher(Pipeline):
     ):
         super().__init__()
         logging.info("Initializing 0MQ Publisher ...")
-        self.datasets: list[h5py.Dataset] = []
+        self.datasets: list = []
         self.capture_record_hdf_names = capture_record_hdf_names
         self.what_to_do = {
             StartData: self.stream_start,
