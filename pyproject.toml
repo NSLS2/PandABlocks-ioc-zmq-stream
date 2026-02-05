@@ -30,7 +30,7 @@ dependencies = [
 [project.scripts]
 
 [project.urls]
-Homepage = "https://github.com/dmgav/PandABlocks-ioc-zmq-stream"
+Homepage = "https://github.com/NSLS2/PandABlocks-ioc-zmq-stream"
 
 [project.optional-dependencies]
 dev = [
