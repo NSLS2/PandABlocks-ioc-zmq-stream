@@ -25,6 +25,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
+  "h5py",
   "pyzmq",
   "pandablocks",
 ]
